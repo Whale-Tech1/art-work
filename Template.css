@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 50px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+.nav a:hover {
+    background-color: rgb(176, 171, 171);
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.general-container {
+    display: flex;
+}
+
+.daniel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.daniel p {
+    width: 95vw;
+    text-align: center;
+}
+.daniel h3 {
+    color: rgba(245, 58, 58, 0.838);
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+input {
+    width: 80%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.send {
+    background-color: grey;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+.daniel a {
+    text-decoration: none;
+    color: black;
+}
+.daniel a:hover {
+    color: green;
+}
+@media  screen and (max-width:600px) {
+    .general-container {
+        flex-direction: column;
+    }
+    .nav {
+        font-size: 13px;
+        padding: 35px 10px;
+    }
+}
